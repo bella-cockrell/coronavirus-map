@@ -8,14 +8,6 @@ const Header = () => {
     <header>
       <Container type="content">
         <p>Latest Coronavirus Figures by Country</p>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2/">About</Link>
-          </li>
-        </ul>
       </Container>
     </header>
   )
