@@ -8,11 +8,17 @@ const SecondPage = () => {
   return (
     <Layout pageName="two">
       <Helmet>
-        <title>Page Two</title>
+        <title>The project</title>
       </Helmet>
       <Container type="content" className="text-center">
-        <h1>Page Two</h1>
-        <p>Welcome to page 2</p>
+        <h1>The project</h1>
+        <p>This map was created using the API
+          <a href='https://corona.lmao.ninja/v2/countries'
+            target='_blank'
+            rel='noopener noreferrer'>
+            here
+          </a>
+        </p>
       </Container>
     </Layout>
   );

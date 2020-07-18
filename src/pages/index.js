@@ -4,10 +4,9 @@ import L from 'leaflet';
 import axios from 'axios';
 
 import Layout from 'components/Layout';
-import Container from 'components/Container';
 import Map from 'components/Map';
-import { LeafletProvider } from 'react-leaflet';
 
+//Default location data
 const LOCATION = {
   lat: 0,
   lng: 0
@@ -17,6 +16,7 @@ const DEFAULT_ZOOM = 2;
 
 const IndexPage = () => {
 
+  //API call
   async function mapEffect({ leafletElement: map } = {}) {
     let response;
 
@@ -115,17 +115,7 @@ const IndexPage = () => {
       <Helmet>
         <title>Home Page</title>
       </Helmet>
-
       <Map {...mapSettings} />
-
-      <Container type="content" className="text-center home-start">
-        <h2>Still Getting Started?</h2>
-        <p>Run the following in your terminal!</p>
-        <pre>
-          <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
-        </pre>
-        <p className="note">Note: Gatsby CLI required globally for the above command</p>
-      </Container>
     </Layout>
   );
 };

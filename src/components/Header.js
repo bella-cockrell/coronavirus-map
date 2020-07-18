@@ -1,24 +1,24 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Container from 'components/Container';
+import Container from 'components/Container'
 
 const Header = () => {
   return (
     <header>
       <Container type="content">
-        <p>My Coronavirus map</p>
+        <p>Latest Coronavirus Figures by Country</p>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/page-2/">Page 2</Link>
+            <Link to="/page-2/">About</Link>
           </li>
         </ul>
       </Container>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
